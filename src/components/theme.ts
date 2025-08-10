@@ -1,47 +1,50 @@
 import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react'
+import { textStyles } from '@/components/fonts'
 
 const config = defineConfig({
   theme: {
+    textStyles,
+    // breakpoints: {
+    //   sm: '320px',
+    //   md: '768px',
+    //   lg: '960px',
+    //   xl: '1200px',
+    // },
     tokens: {
       colors: {
-        brand: {
-          50: { value: "#f5f3ff" },
-          100: { value: "#ede9fe" },
-          200: { value: "#ddd6fe" },
-          300: { value: "#c4b5fd" },
-          400: { value: "#a78bfa" },
-          500: { value: "#8b5cf6" },
-          600: { value: "#7c3aed" },
-          700: { value: "#6d28d9" },
-          800: { value: "#5b21b6" },
-          900: { value: "#4c1d95" },
+        blue: {
+          normal: { value: '#123458' },
+          vivid: { value: '#3B82F6' },
+          hovers: { value: '#2563EB' },
+          gradient1: { value: '#03346E' },
+          gradient2: { value: '#6EACDA' },
+          navbar: { value: '#799EFF' },
         },
-        pink: {
-          50: { value: "#fdf2f8" },
-          100: { value: "#fce7f3" },
-          200: { value: "#fbcfe8" },
-          300: { value: "#f9a8d4" },
-          400: { value: "#f472b6" },
-          500: { value: "#ec4899" },
-          600: { value: "#db2777" },
-          700: { value: "#be185d" },
-          800: { value: "#9d174d" },
-          900: { value: "#831843" },
+        whites: {
+          normal: { value: '#EFEEEA' },
+        },
+        texts: {
+          normal: { value: '#D4C9BE' },
         },
       },
     },
     semanticTokens: {
       colors: {
-        bg: {
-          DEFAULT: { value: "#000000" },
-          secondary: { value: "#111827" },
-          card: { value: "#1f2937" },
+        brown: {
+          solid: { value: '{colors.brown.500}' },
+          contrast: { value: '{colors.brown.50}' }, // Warna teks di atas solid
+          fg: { value: '{colors.brown.500}' }, // Foreground untuk teks, ikon
+          muted: { value: '{colors.brown.100}' },
+          subtle: { value: '{colors.brown.200}' },
+          emphasized: { value: '{colors.brown.300}' },
+          focusRing: { value: '{colors.brown.500}' },
         },
-        text: {
-          primary: { value: "#ffffff" },
-          secondary: { value: "#d1d5db" },
-          muted: { value: "#9ca3af" },
-        },
+      },
+    },
+    keyframes: {
+      spin: {
+        from: { transform: 'rotate(0deg)' },
+        to: { transform: 'rotate(360deg)' },
       },
     },
   },

@@ -44,7 +44,7 @@ const AnimatedBoxes = () => {
   }, [generateBoxes])
 
   return (
-    <Box position="absolute" inset="0" overflow="hidden" pointerEvents="none">
+    <Box position="absolute" inset="0" overflow="hidden" pointerEvents="none" zIndex={0}>
       {boxes.map((box) => (
         <AnimatedBox key={box.id} {...box} />
       ))}

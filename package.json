@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^3.23.0",
-    "@emotion/react": "^11.14.0",
-    "@svgr/webpack": "^8.1.0",
     "framer-motion": "^12.23.9",
     "lucide-react": "^0.526.0",
     "next": "15.1.4",

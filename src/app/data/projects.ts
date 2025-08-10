@@ -1,9 +1,9 @@
 export const projectsData = [
   {
-    title: "Serverless Web3 Blog",
+    title: "One Day, One Sentence",
     description: "Decentralized blogging platform with permanent storage on Arweave and crypto micropayments.",
     tags: ["Next.js", "Firebase", "Arweave", "Web3"],
-    url: "https://facebook.com",
+    url: "https://catardot.vercel.app",
   },
   {
     title: "Cross-Chain Bridge",

@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Heading, Container, Link } from "@chakra-ui/react"
+import { Box, Heading, Container, Link, Text } from "@chakra-ui/react"
 import { skillsData } from "@/app/data/skills"
 import { motion } from 'framer-motion'
 import { useEffect, useState, useRef } from "react"
@@ -21,30 +21,41 @@ export const Skills = () => {
   return (
     <>
       <Box as="section" id="skills" py={20} bgGradient="linear(to-b, black, gray.900)">
-        <Container maxW="container.xl" px={4}>
+        <Container maxW="container.xl" px={8}>
           <MotionBox initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Box>
-              <Heading as="h3" size={{ base: "lg", md: "xl" }} mb={8} textAlign="center" bgGradient="linear(to-r, brand.400, pink.500)" bgClip="text" color="white">
-                Code Barcelona ⚔️
+              <Heading as="h2" p="4" textStyle="sectionHeading" textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="whites.normal" bgClip="text">
+                Tech Stack & Skills
               </Heading>
 
-              <Box p={6} bg="blackAlpha.500" borderRadius="xl" border="1px solid" borderColor="gray.800" backdropFilter="blur(4px)">
-                <Box ref={containerRef} display="flex" flexWrap="wrap" gap={4} justifyContent="center" maxH={showAll ? "1000px" : "6rem"} overflow="hidden" transition="max-height 0.4s ease-in-out">
-                  {skillsData.map((skill) => (
-                    <Link key={skill.name} href={skill.url} as={skill.url ? "a" : "div"} display="flex" alignItems="center" px={4} py={2} bg="whiteAlpha.100" borderRadius="full" border="1px solid" borderColor="gray.700" fontWeight="semibold" fontSize="sm" color="white" _hover={{ bg: "whiteAlpha.200" }} textDecoration="none">
-                      {skill.icon && (
-                        <Box as={skill.icon} boxSize={5} mr={2} />
-                      )}
-                      {skill.name}
-                    </Link>
-                  ))}
+              <Heading as="h3" textStyle="sectionSubHeading" mb={8} textAlign="center" color="texts.normal">
+                Languages, tools, and frameworks I use to build fast and scalable web applications.
+              </Heading>
+
+              <Box p={{ base: 3, sm: 6, md: 6, lg: 6, xl: 6 }} bg="blackAlpha.500" borderRadius="xl" border="1px solid" borderColor="gray.800" backdropFilter="blur(4px)">
+                <Box ref={containerRef} display="flex" flexWrap="wrap" gap={{ base: 1, md: 4 }} justifyContent="center" maxH={showAll ? { base: "1000px", md: "1000px" } : { base: "6.5rem", md: "6rem" }} overflow="hidden" transition="max-height 0.4s ease-in-out">
+                  {skillsData.map((skill) => {
+                    const isClickable = Boolean(skill.url)
+                    
+                    return isClickable ? (
+                      <Link key={skill.name} href={skill.url} textStyle="skillBadge" display="flex" alignItems="center" px={{ base: 2, md: 4 }} py={{ base: 2, md: 2 }} bg="whiteAlpha.100" borderRadius="full" border="1px solid" borderColor="gray.700" color="texts.normal" _hover={{ bg: "whiteAlpha.200", borderColor: "blue.hovers" }} textDecoration="none">
+                        {skill.icon && <Box as={skill.icon} boxSize={{ base: 4, sm: 5, md: 5, lg: 5, xl: 6 }} mr={{ base: 1, sm: 5, md: 5, lg: 5, xl: 2 }} />}
+                        {skill.name}
+                      </Link>
+                    ) : (
+                      <Box key={skill.name} display="flex" textStyle="skillBadge" alignItems="center" px={{ base: 2, md: 4 }} py={{ base: 2, md: 2 }} bg="whiteAlpha.100" borderRadius="full" border="1px solid" borderColor="gray.700" color="texts.normal">
+                        {skill.icon && <Box as={skill.icon} boxSize={{ base: 4, sm: 5, md: 5, lg: 5, xl: 6 }} mr={{ base: 1, sm: 5, md: 5, lg: 5, xl: 2 }} />}
+                        {skill.name}
+                      </Box>
+                    )
+                  })}
                 </Box>
 
                 {isOverflowing && (
-                  <Box textAlign="center" mt={4}>
-                    <button onClick={() => setShowAll(!showAll)} style={{ color: "#fff", textDecoration: "underline", cursor: "pointer", fontWeight: "bold" }}>
+                  <Box textAlign="center" mt={{ base: 1, md: 4 }}>
+                    <Text as="button" textStyle="showMore" onClick={() => setShowAll(!showAll)} color="texts.normal" cursor="pointer">
                       {showAll ? "Show Less" : "Show More..."}
-                    </button>
+                    </Text>
                   </Box>
                 )}
               </Box>

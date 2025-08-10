@@ -4,8 +4,8 @@ import type React from 'react'
 import { Box } from '@chakra-ui/react'
 import { Navbar } from '@/app/components/navbar'
 import { AboutMe } from '@/app/components/about'
-import { Services } from '@/app/components/services'
-import { Works } from '@/app/components/works'
+// import { Services } from '@/app/components/services'
+import { Projects } from '@/app/components/projects'
 import { Contacts } from '@/app/components/contacts'
 import { Hero } from '@/app/components/hero'
 import { Footer } from '@/app/components/footer'
@@ -15,7 +15,7 @@ import { Timelines } from '@/app/components/timelines'
 export default function Home() {
   return (
     <>
-      <Box minH="100vh" bg="black" color="white" overflow="hidden">
+      <Box minH="100vh" bg="black" overflow="hidden">
         
         {/* Navbar */}
         <Navbar/>
@@ -33,10 +33,10 @@ export default function Home() {
         <Timelines/>
 
         {/* Services Section */}
-        <Services/>
+        {/* <Services/> */}
 
-        {/* Work Section */}
-        <Works/>
+        {/* Projects Section */}
+        <Projects/>
 
         {/* Contact Section */}
         <Contacts/>

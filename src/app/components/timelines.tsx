@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
-import { Box, Container, Heading, Text, Image, VStack, HStack, Grid, GridItem, Flex, Badge, Timeline, Icon } from '@chakra-ui/react'
+import { Box, Container, Heading, Text, Image, VStack, HStack, Flex, Badge, Timeline } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { Calendar, MapPin, Building2 } from 'lucide-react'
 import { timelineData } from '@/app/data/timeline'
@@ -17,36 +17,36 @@ function TimelineCard({ item }: { item: TimelineItemType }) {
           </Box>
 
           <VStack align="flex-start" gap={1}>
-            <Heading as="h3" size="md" color="white">
+            <Heading as="h3" textStyle="roleTimeline" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="whites.normal" bgClip="text">
               {item.role}
             </Heading>
-            <Heading as="h4" size="sm" color="brand.400">
+            <Heading as="h4" textStyle="companyTimeline" color="texts.normal">
               {item.company}
             </Heading>
-            <HStack color="gray.400" fontSize="sm">
+            <HStack color="gray.400" textStyle="detailTimeline">
               <Calendar size={16} />
               <Text>{item.period}</Text>
             </HStack>
-            <HStack color="gray.400" fontSize="sm">
+            <HStack color="gray.400" textStyle="detailTimeline">
               <MapPin size={16} />
               <Text>{item.location}</Text>
             </HStack>
-            <HStack color="gray.400" fontSize="sm">
+            <HStack color="gray.400" textStyle="detailTimeline">
               <Building2 size={16} />
               <Text>{item.type}</Text>
             </HStack>
           </VStack>
         </HStack>
 
-        {item.skills.length > 0 && (
+        {/* {item.skills.length > 0 && (
           <Flex flexWrap="wrap" gap={2}>
             {item.skills.map((skill: string, idx: number) => (
-              <Badge key={idx} px={3} py={1} fontSize="sm" borderRadius="full" bg="blackAlpha.300" color="brand.300" border="1px solid" borderColor="brand.500/20">
+              <Badge key={idx} px={3} py={1} textStyle="badgeTimeline" borderRadius="full" bg="blackAlpha.300" color="brand.300" border="1px solid" borderColor="brand.500/20">
                 {skill}
               </Badge>
             ))}
           </Flex>
-        )}
+        )} */}
       </Box>
     </>
   )
@@ -57,12 +57,16 @@ export const Timelines = () => {
   return (
     <>
       <Box as="section" id="timelines" py={20} bgGradient="linear(to-b, black, gray.900)">
-        <Container maxW="container.xl" px={4}>
+        <Container maxW="container.xl" px={8}>
           <MotionBox initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Box mb={20}>
-              <Heading as="h3" size={{ base: "lg", md: "xl" }} mb={8} textAlign="center" bgGradient="linear(to-r, brand.400, pink.500)" bgClip="text" color="white">
-                The Road So Far 🛤️
+              <Heading as="h2" size={{ base: "lg", md: "xl" }} p="4" textStyle="sectionHeading" textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="whites.normal" bgClip="text">
+                Experience
               </Heading>
+
+              <Text as="h3" pb="8" textAlign="center" textStyle="sectionSubHeading" color="texts.normal">
+                A timeline of my roles, contributions, and growth as a software developer.
+              </Text>
             
               {/* Desktop Timeline */}
               <Box display={{ base: "none", md: "block" }}>

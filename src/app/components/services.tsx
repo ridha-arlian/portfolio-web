@@ -25,8 +25,8 @@ function ServiceCard({ icon, title, description }: { icon: React.ReactNode, titl
 export const Services = () => {
   return (
     <>
-      <Box as="section" id="services" py={20} bg="black">
-        <Container maxW="container.xl" px={4}>
+      <Box as="section" id="services" py={15} bg="black">
+        <Container maxW="container.xl" px={8}>
           <MotionBox initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Heading as="h2" size={{ base: "xl", md: "2xl" }} mb={12} textAlign="center" bgGradient="linear(to-r, brand.400, pink.500)" bgClip="text" color="white">
               My Expertise 🛠️
