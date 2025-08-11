@@ -17,10 +17,10 @@ function TimelineCard({ item }: { item: TimelineItemType }) {
           </Box>
 
           <VStack align="flex-start" gap={1}>
-            <Heading as="h3" textStyle="roleTimeline" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="whites.normal" bgClip="text">
+            <Heading as="h3" textStyle="roleTimeline" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="white" bgClip="text">
               {item.role}
             </Heading>
-            <Heading as="h4" textStyle="companyTimeline" color="texts.normal">
+            <Heading as="h4" textStyle="companyTimeline" color="white">
               {item.company}
             </Heading>
             <HStack color="gray.400" textStyle="detailTimeline">
@@ -60,11 +60,11 @@ export const Timelines = () => {
         <Container maxW="container.xl" px={8}>
           <MotionBox initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Box mb={20}>
-              <Heading as="h2" size={{ base: "lg", md: "xl" }} p="4" textStyle="sectionHeading" textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="whites.normal" bgClip="text">
+              <Heading as="h2" size={{ base: "lg", md: "xl" }} p="4" textStyle="sectionHeading" textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="white" bgClip="text">
                 Experience
               </Heading>
 
-              <Text as="h3" pb="8" textAlign="center" textStyle="sectionSubHeading" color="texts.normal">
+              <Text as="h3" pb="8" textAlign="center" textStyle="sectionSubHeading" color="white">
                 A timeline of my roles, contributions, and growth as a software developer.
               </Text>
             

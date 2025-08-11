@@ -16,17 +16,17 @@ function ProjectCard({ title, description, tags, url }: { title: string, descrip
           </Link>
         )}
         
-        <Heading as="h3" textStyle="titleProjects" mb={3} color="white" textAlign="center">
+        <Heading as="h3" textStyle="titleProjects" mb={3} textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="white" bgClip="text">
           {title}
         </Heading>
         
-        <Text color="gray.400" textStyle="descProjects" mb={4} textAlign="center">
+        <Text color="white" textStyle="descProjects" mb={4} textAlign="center">
           {description}
         </Text>
         
         <Flex flexWrap="wrap" justify="center" gap={1}>
           {tags.map((tag, i) => (
-            <Badge key={i} px={{ base: 2, sm: 3, md: 3, lg: 3, xl: 3 }} py={1} textStyle="badgeProjects" borderRadius="full" bg="blackAlpha.300" color="brand.300" border="1px solid" borderColor="brand.500/20">
+            <Badge key={i} px={{ base: 2, sm: 3, md: 3, lg: 3, xl: 3 }} py={1} textStyle="badgeProjects" borderRadius="full" bg="blackAlpha.300" color="white" _hover={{ color:"blue.vivid", borderColor: "blue.vivid" }} border="1px solid" borderColor="brand.500/20">
               {tag}
             </Badge>
           ))}

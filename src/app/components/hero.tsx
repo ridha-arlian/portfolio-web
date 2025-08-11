@@ -27,7 +27,7 @@ export const Hero = () => {
                 </Button>
               </ScrollLink>
               <ScrollLink to="contact" smooth={true} duration={500}>
-                <Button textStyle="buttonHero2" variant="outline" bg="transparent" borderColor="whites.normal" color="texts.normal" _hover={{ borderColor: "blue.hovers", color: "blue.hovers" }} transition="all 0.3s">
+                <Button textStyle="buttonHero2" variant="outline" bg="transparent" borderColor="white" color="white" _hover={{ borderColor: "blue.hovers", color: "blue.hovers" }} transition="all 0.3s">
                   Contact Me
                 </Button>
               </ScrollLink>

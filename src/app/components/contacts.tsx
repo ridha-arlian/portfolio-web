@@ -17,10 +17,10 @@ export const Contacts = () => {
       <Box as="section" id="contact" py={20}>
         <Container maxW="container.lg" px={8}>
           <MotionBox initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
-            <Heading as="h2" textStyle="sectionHeading" p="4" textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="whites.normal" bgClip="text">
+            <Heading as="h2" textStyle="sectionHeading" p="4" textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="white" bgClip="text">
               Contact Me
             </Heading>
-            <Heading as="h3" textStyle="sectionSubHeading" textAlign="center" color="texts.normal" mb="10">
+            <Heading as="h3" textStyle="sectionSubHeading" textAlign="center" color="white" mb="10">
               I&apos;m Open to Collaborations, Inquiries, and Professional Opportunities.
             </Heading>
             <Box bg="gray.900" p={6} borderRadius="lg" border="1px solid" borderColor="gray.800">
@@ -47,7 +47,7 @@ export const Contacts = () => {
                     <Textarea name="message" rows={4} bg="gray.800" borderColor="gray.700" color="white" _focus={{ borderColor: "brand.500" }}/>
                   </Field.Root>
                   
-                  <Button type="submit" textStyle="contactDetail" width="100%" _hover={{ bgGradient: "linear(to-r, brand.600, pink.600)" }}>
+                  <Button type="submit" textStyle="contactDetail" width="100%" _hover={{ bg: "blue.hovers" }}>
                     Send Message
                   </Button>
                 </VStack>
@@ -61,7 +61,8 @@ export const Contacts = () => {
                     <Calendar size={16} />
                     Schedule a Meeting
                   </Button>
-                  <Button as="a" rel="noopener noreferrer" textStyle="contactButton" bg="pink.600" _hover={{ bg: "pink.700" }} color="white">
+                  {/* <Button as="a" rel="noopener noreferrer" textStyle="contactButton" bg="pink.600" _hover={{ bg: "pink.700" }} color="white"> */}
+                  <Button as="a" rel="noopener noreferrer" textStyle="contactButton" variant="outline" bg="transparent" borderColor="white" color="white" _hover={{ borderColor: "blue.hovers", color: "blue.hovers" }} transition="all 0.3s">
                     <FileText size={16} />
                     View CV
                   </Button>
