@@ -57,9 +57,11 @@ export const Contacts = () => {
                   Prefer to schedule a meeting?
                 </Text>
                 <HStack gap={4} flexWrap="wrap" justify="center">
-                  <Button as="a" rel="noopener noreferrer" textStyle="contactButton" bg="blue.vivid" _hover={{ bg: "blue.hovers" }}>
-                    <Calendar size={16} />
-                    Schedule a Meeting
+                  <Button textStyle="contactButton" bg="blue.vivid" _hover={{ bg: "blue.hovers" }} asChild>
+                    <a href="https://calendar.app.google/EMk95a7fiXYqZcxk6" target="blank" rel="noopener noreferrer">
+                      <Calendar size={16} />
+                      Schedule a Meeting
+                    </a>
                   </Button>
                   {/* <Button as="a" rel="noopener noreferrer" textStyle="contactButton" bg="pink.600" _hover={{ bg: "pink.700" }} color="white"> */}
                   <Button as="a" rel="noopener noreferrer" textStyle="contactButton" variant="outline" bg="transparent" borderColor="white" color="white" _hover={{ borderColor: "blue.hovers", color: "blue.hovers" }} transition="all 0.3s">

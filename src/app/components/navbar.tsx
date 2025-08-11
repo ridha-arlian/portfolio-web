@@ -61,13 +61,13 @@ export const Navbar = () => {
             </Box>
           ))}
           <HStack gap={{ base: '2', sm: '4', md: '2', lg: '8', xl: '10' }}>
-            <Button  rel="noopener noreferrer" size="sm" boxSize="10" aria-label="Linkedin" variant="ghost" bg="inherit" _hover={{ borderColor: "blue.navbar", transform: "scale(1.2) rotate(5deg)" }} transition="all 0.3s" _active={{ bg: "blue.hovers" }} asChild>
-              <a href="https://linkedin.com/in/ridha-arlian">
+            <Button size="sm" boxSize="10" aria-label="Linkedin" variant="ghost" bg="inherit" _hover={{ borderColor: "blue.navbar", transform: "scale(1.2) rotate(5deg)" }} transition="all 0.3s" _active={{ bg: "blue.hovers" }} asChild>
+              <a href="https://linkedin.com/in/ridha-arlian" target="blank" rel="noopener noreferrer">
                 <Linkedinicons boxSize="5"/>
               </a>
             </Button>
-            <Button  rel="noopener noreferrer" size="sm" boxSize="10" aria-label="GitHub" variant="ghost" bg="inherit" _hover={{ borderColor: "blue.navbar", transform: "scale(1.2) rotate(5deg)" }} transition="all 0.3s" asChild>
-              <a href="https://github.com/ridha-arlian">
+            <Button size="sm" boxSize="10" aria-label="GitHub" variant="ghost" bg="inherit" _hover={{ borderColor: "blue.navbar", transform: "scale(1.2) rotate(5deg)" }} transition="all 0.3s" asChild>
+              <a href="https://github.com/ridha-arlian" target="blank" rel="noopener noreferrer">
                 <Githubiconsnav boxSize="5"/>
               </a>
             </Button>

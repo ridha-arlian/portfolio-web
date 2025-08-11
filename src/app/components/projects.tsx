@@ -55,7 +55,7 @@ export const Projects = () => {
             <Heading as="h2" textStyle="sectionHeading" pb="4" textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="whites.normal" bgClip="text">
               Project Showcase
             </Heading>
-            <Text as="h3" textStyle="sectionSubHeading" mb="8" textAlign="center" color="texts.normal">
+            <Text as="h3" textStyle="sectionSubHeading" mb="8" textAlign="center" color="white">
               Selected work that showcases my development capabilities.
             </Text>
             <Flex direction="column" align="center" position="relative">

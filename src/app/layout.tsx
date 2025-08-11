@@ -14,7 +14,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Ridha Arlian - Web and Back-end Developer",
+  title: "Ridha Arlian",
   description: "Portfolio of Ridha Arlian.",
   generator: "Next.js",
 }

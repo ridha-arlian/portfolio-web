@@ -3,7 +3,7 @@ import { Githubicons } from '@/components/icons/iconsDarkMode'
 export const footersData = [
   {
     label: 'GitHub',
-    href: 'https://github.com/aakash4dev',
+    href: 'https://github.com/ridha-arlian',
     icon: Githubicons
   },
   {

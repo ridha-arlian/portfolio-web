@@ -17,7 +17,7 @@ export const Footer = () => {
         <Container maxW="container.xl" px={4}>
           <HStack justify="center" gap={6} mb={8} flexWrap="wrap">
             {footersData.map((item) => (
-              <Link key={item.label} href={item.href} aria-label={item.label} display="flex" textStyle="footerButton" alignItems="center" gap={2} px={4} py={2} borderRadius="full" bg="blackAlpha.300" color="white" transition="all 0.3s">
+              <Link key={item.label} href={item.href} aria-label={item.label} display="flex" textStyle="footerButton" alignItems="center" gap={2} px={4} py={2} borderRadius="full" bg="blackAlpha.300" color="white" transition="all 0.3s" target="blank" rel="noopener noreferrer">
                 {item.icon && <Box as={item.icon} boxSize={{ base: 6, md: 6 }} mr={2} />}
                 {item.label}
               </Link>
@@ -28,7 +28,7 @@ export const Footer = () => {
             <Text color="gray.500" textStyle="footerText" textAlign="center">
               {year ? `© ${year} Ridha Arlian. All rights reserved.` : null}
             </Text>
-            <Link href="mailto:ridhaarlian@proton.me" color="brand.400" textStyle="footerText" _hover={{ color: 'brand.300' }}>
+            <Link href="mailto:ridhaarlian@proton.me" color="brand.400" textStyle="footerText" _hover={{ color: 'brand.300' }} target="blank" rel="noopener noreferrer">
               ridhaarlian@proton.me
             </Link>
           </VStack>

@@ -19,7 +19,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '14px', sm: '16px', md: '18px', lg: '22px', xl: '22px' },
+      fontSize: { base: '16px', sm: '16px', md: '18px', lg: '22px', xl: '22px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
