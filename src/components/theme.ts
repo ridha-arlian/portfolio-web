@@ -4,40 +4,47 @@ import { textStyles } from '@/components/fonts'
 const config = defineConfig({
   theme: {
     textStyles,
-    // breakpoints: {
-    //   sm: '320px',
-    //   md: '768px',
-    //   lg: '960px',
-    //   xl: '1200px',
-    // },
     tokens: {
       colors: {
         blue: {
           normal: { value: '#123458' },
           vivid: { value: '#3B82F6' },
           hovers: { value: '#2563EB' },
-          gradient1: { value: '#03346E' },
-          gradient2: { value: '#6EACDA' },
+          
           navbar: { value: '#799EFF' },
         },
         whites: {
           normal: { value: '#EFEEEA' },
+          bgs: { value: '#F2F2F2' },
         },
         texts: {
           normal: { value: '#D4C9BE' },
         },
+        greens: {
+          normal: { value: '#727D73' },
+        }
       },
+      gradients: {
+        headings: { value: 'linear-gradient(to right, #3B82F6, white)' },
+        headingsLogo: { value: 'linear-gradient(to right, #727D73, #948979)' },
+      }
     },
     semanticTokens: {
       colors: {
-        brown: {
-          solid: { value: '{colors.brown.500}' },
-          contrast: { value: '{colors.brown.50}' }, // Warna teks di atas solid
-          fg: { value: '{colors.brown.500}' }, // Foreground untuk teks, ikon
-          muted: { value: '{colors.brown.100}' },
-          subtle: { value: '{colors.brown.200}' },
-          emphasized: { value: '{colors.brown.300}' },
-          focusRing: { value: '{colors.brown.500}' },
+        background: {
+          value: { base: '{colors.whites.bgs}', _dark: 'black' },
+        },
+        text: {
+          value: { base: '{colors.greens.normal}', _dark: 'gray.300' },
+        },
+        hovers: {
+          value: { base: '{colors.blue.vivid}', _dark: '{colors.whites.normal}' },
+        },
+        hoversLogo: {
+          value: { base: '{colors.blue.vivid}', _dark: '{colors.blue.vivid}' },
+        },
+        headingsGrads: {
+          value: { base: '{gradients.headingsLogo}', _dark: '{gradients.headings}' },
         },
       },
     },

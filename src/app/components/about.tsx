@@ -11,7 +11,7 @@ export const AboutMe = () => {
       <Box as="section" id="about" py={12} bgGradient="linear(to-b, black, gray.900)">
         <Container maxW="container.xl" px={8}>
           <MotionBox initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
-            <Heading as="h2" textStyle="sectionHeading" p="4" mb="8" textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="white" bgClip="text">
+            <Heading as="h2" textStyle="sectionHeading" p="4" mb="8" textAlign="center" bgGradient="headings" bgClip="text">
               Hi, I&apos;m Ridha — A Web Developer and Backend Engineer.
             </Heading>
 

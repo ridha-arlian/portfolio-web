@@ -14,7 +14,7 @@ export const Hero = () => {
         <AnimatedBoxes />
         <Container position="relative" zIndex={10} px={8} textAlign="center">
           <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <Heading as="h1" textStyle="heroHeading" p="4" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="white" bgClip="text">
+            <Heading as="h1" textStyle="heroHeading" p="4" bgGradient="headings" bgClip="text">
                RIDHA ARLIAN — Web & Backend Developer.
             </Heading>
             <Heading as="h2" textStyle="heroSubHeading" mb="8" color="white">

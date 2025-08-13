@@ -13,7 +13,7 @@ export const Timelines = () => {
       <Box as="section" id="timelines" py={20} bgGradient="to-b" gradientFrom="black" gradientTo="gray.900" bgClip="text">
         <Container maxW="container.xl" px={8}>
           <MotionBox initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
-            <Heading as="h2" p="4" textStyle="sectionHeading" textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="white" bgClip="text">
+            <Heading as="h2" p="4" textStyle="sectionHeading" textAlign="center" bgGradient="headings" bgClip="text">
               Experience
             </Heading>
 
@@ -27,17 +27,14 @@ export const Timelines = () => {
                 {timelineData.map((item, index) => {
                   const isEven = index % 2 === 0
                   const Card = (
-                    <Box p={6} bg="blackAlpha.500" borderRadius="xl" backdropFilter="blur(4px)" border="1px solid" borderColor="gray.800" maxW="100%">
+                    <Box p={4} bg="blackAlpha.500" borderRadius="xl" backdropFilter="blur(4px)" border="1px solid" borderColor="gray.800" maxW="100%">
                       <HStack gap={4} mb={4}>
-                        {/* <Box width={{ base: "64px", md: "48px" }} height={{ base: "64px", md: "48px" }} borderRadius="full" bg="gray.800" display="flex" alignItems="center" justifyContent="center">
-                          <item.logo width="50%" height="50%" />
-                        </Box> */}
-                        <Box w="64px" h="64px" borderRadius="full" bg="gray.800" display="flex" alignItems="center" justifyContent="center" overflow="hidden">
-                          {item.logo && <Box as={item.logo} boxSize={6} />}
+                        <Box w={{ md: '60px', lg: '60px', xl: '60px' }} h={{ md: '60px', lg: '60px', xl: '60px' }} minW={{ md: '60px', lg: '60px', xl: '60px' }} minH={{ md: '60px', lg: '60px', xl: '60px' }} maxW={{ md: '60px', lg: '60px', xl: '60px' }} maxH={{ md: '60px', lg: '60px', xl: '60px' }} flexShrink={0} borderRadius="full" bg="gray.800" display="flex" alignItems="center" justifyContent="center" overflow="hidden">
+                          {item.logo && <Box as={item.logo} boxSize={{ md: 9, lg: 9, xl: 10 }} />}
                         </Box>
 
                         <VStack align="flex-start" gap={1}>
-                          <Heading as="h3" textStyle="roleTimeline" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="white" bgClip="text">
+                          <Heading as="h3" textStyle="roleTimeline" bgGradient="headings" bgClip="text">
                             {item.role}
                           </Heading>
                           <Heading as="h4" textStyle="companyTimeline" color="white">
@@ -98,8 +95,8 @@ export const Timelines = () => {
                     <Timeline.Content display="flex" width="100%">
                       <Box p={2} bg="blackAlpha.500" borderRadius="xl" backdropFilter="blur(4px)" border="1px solid" borderColor="gray.800" maxW="100%">
                         <HStack gap={3} mb={4}>
-                          <Box w="40px" h="40px" minW="40px" minH="40px" maxW="40px" maxH="40px" flexShrink={0} borderRadius="full" bg="gray.800" display="flex" alignItems="center" justifyContent="center" overflow="hidden">
-                            {item.logo && <Box as={item.logo} boxSize={6} />}
+                          <Box w={{ base: '40px', sm: '60px' }} h={{ base: '40px', sm: '60px' }} minW={{ base: '40px', sm: '60px' }} minH={{ base: '40px', sm: '60px', md: '40px' }} maxW={{ base: '40px', sm: '60px', md: '40px' }} maxH={{ base: '40px', sm: '60px', md: '40px' }} flexShrink={0} borderRadius="full" bg="gray.800" display="flex" alignItems="center" justifyContent="center" overflow="hidden">
+                            {item.logo && <Box as={item.logo} boxSize={{ base: 6, sm: 8 }} />}
                           </Box>
 
                           <VStack align="flex-start" gap={1}>

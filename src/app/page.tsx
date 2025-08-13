@@ -15,7 +15,7 @@ import { Timelines } from '@/app/components/timelines'
 export default function Home() {
   return (
     <>
-      <Box minH="100vh" bg="black" overflow="hidden">
+      <Box minH="100vh" bg="background" overflow="hidden">
         
         {/* Navbar */}
         <Navbar/>

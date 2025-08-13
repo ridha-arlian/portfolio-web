@@ -27,7 +27,7 @@ export const Footer = () => {
             <Text color="gray.500" textStyle="footerText" textAlign="center">
               {year ? `© ${year} Ridha Arlian. All rights reserved.` : null}
             </Text>
-            <Link href="mailto:ridhaarlian@proton.me" color="brand.400" textStyle="footerText" _hover={{ color: 'brand.300' }} target="blank" rel="noopener noreferrer">
+            <Link href="mailto:ridhaarlian@proton.me" color="white" textStyle="footerText" _hover={{ color: 'blue.hovers' }} target="blank" rel="noopener noreferrer">
               ridhaarlian@proton.me
             </Link>
           </VStack>

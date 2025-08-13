@@ -16,7 +16,7 @@ function ProjectCard({ title, description, tags, url }: { title: string, descrip
           </Link>
         )}
         
-        <Heading as="h3" textStyle="titleProjects" mb={3} textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="white" bgClip="text">
+        <Heading as="h3" textStyle="titleProjects" mb={3} pb={1} textAlign="center" bgGradient="headings" bgClip="text">
           {title}
         </Heading>
         

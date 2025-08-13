@@ -17,7 +17,7 @@ export const Contacts = () => {
       <Box as="section" id="contact" py={20}>
         <Container maxW="container.lg" px={8}>
           <MotionBox initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
-            <Heading as="h2" textStyle="sectionHeading" p="4" textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="white" bgClip="text">
+            <Heading as="h2" textStyle="sectionHeading" p="4" textAlign="center" bgGradient="headings" bgClip="text">
               Contact Me
             </Heading>
             <Heading as="h3" textStyle="sectionSubHeading" textAlign="center" color="white" mb="10">

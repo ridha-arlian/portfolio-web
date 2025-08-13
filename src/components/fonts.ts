@@ -7,7 +7,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '28px', sm: '30px', md: '35px', lg: '40px', xl: '40px' },
+      fontSize: { base: '28px', sm: '30px', md: '32px', lg: '34px', xl: '36px' },
       lineHeight: { base: '30px', sm: '30px', md: '45px', lg: '50px', xl: '55px' },
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -19,7 +19,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '16px', sm: '16px', md: '18px', lg: '22px', xl: '22px' },
+      fontSize: { base: '16px', sm: '16px', md: '18px', lg: '20px', xl: '22px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -33,8 +33,8 @@ export const textStyles = defineTextStyles({
     description: 'For Brand Logo in Navbar',
     value: {
       fontFamily: 'var(--font-space-grotesk)',
-      fontWeight: '600',
-      fontSize: { base: '20px', sm: '25px', md: '25px', lg: '35px', xl: '35px' },
+      fontWeight: '800',
+      fontSize: { base: '20px', sm: '24px', md: '28px', lg: '32px', xl: '34px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -45,8 +45,8 @@ export const textStyles = defineTextStyles({
     description: 'For Navigate Text in Navbar',
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
-      fontWeight: '600',
-      fontSize: { base: '25px', sm: '14px', md: '14px', lg: '16px', xl: '18px' },
+      fontWeight: '800',
+      fontSize: { base: '24px', sm: '16px', md: '16px', lg: '18px', xl: '18px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -60,7 +60,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-space-grotesk)',
       fontWeight: '800',
-      fontSize: { base: '28px', sm: '30px', md: '38px', lg: '45px', xl: '45px' },
+      fontSize: { base: '28px', sm: '30px', md: '32px', lg: '34px', xl: '38px' },
       lineHeight: { base: '30px', sm: '25px', md: '45px', lg: '50px', xl: '55px' },
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -72,7 +72,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '18px', sm: '20px', md: '22px', lg: '25px', xl: '25px' },
+      fontSize: { base: '18px', sm: '20px', md: '22px', lg: '24px', xl: '26px' },
       lineHeight: { base: '30px', sm: '20px', md: '22px', lg: '25px', xl: '25px' },
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -84,7 +84,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '14px', sm: '16px', md: '18px', lg: '20px', xl: '20px' },
+      fontSize: { base: '14px', sm: '16px', md: '18px', lg: '18px', xl: '18px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -96,7 +96,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '14px', sm: '16px', md: '18px', lg: '20px', xl: '20px' },
+      fontSize: { base: '14px', sm: '16px', md: '18px', lg: '18px', xl: '18px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -125,7 +125,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '12px', sm: '16px', md: '14px', lg: '16px', xl: '16px' },
+      fontSize: { base: '12px', sm: '14px', md: '16px', lg: '16px', xl: '16px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -137,7 +137,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '12px', sm: '16px', md: '14px', lg: '18px', xl: '18px' },
+      fontSize: { base: '12px', sm: '14px', md: '16px', lg: '16px', xl: '16px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'underline',
@@ -152,7 +152,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '16px', sm: '16px', md: '14px', lg: '20px', xl: '20px' },
+      fontSize: { base: '16px', sm: '18px', md: '20px', lg: '22px', xl: '24px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -164,7 +164,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '14px', sm: '16px', md: '14px', lg: '18px', xl: '18px' },
+      fontSize: { base: '14px', sm: '16px', md: '18px', lg: '18px', xl: '18px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -176,7 +176,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '12px', sm: '16px', md: '14px', lg: '16px', xl: '16px' },
+      fontSize: { base: '12px', sm: '14px', md: '16px', lg: '16px', xl: '16px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -203,7 +203,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '16px', sm: '16px', md: '14px', lg: '22px', xl: '22px' },
+      fontSize: { base: '16px', sm: '18px', md: '20px', lg: '22px', xl: '22px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -215,7 +215,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '14px', sm: '16px', md: '14px', lg: '18px', xl: '18px' },
+      fontSize: { base: '14px', sm: '16px', md: '18px', lg: '18px', xl: '18px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -227,7 +227,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '12px', sm: '16px', md: '14px', lg: '14px', xl: '14px' },
+      fontSize: { base: '12px', sm: '14px', md: '14px', lg: '14px', xl: '14px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -241,7 +241,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '12px', sm: '16px', md: '14px', lg: '18px', xl: '18px' },
+      fontSize: { base: '12px', sm: '14px', md: '14px', lg: '16px', xl: '16px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -253,7 +253,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '12px', sm: '16px', md: '14px', lg: '16px', xl: '16px' },
+      fontSize: { base: '12px', sm: '14px', md: '14px', lg: '16px', xl: '16px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -265,7 +265,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '14px', sm: '16px', md: '14px', lg: '14px', xl: '14px' },
+      fontSize: { base: '14px', sm: '16px', md: '16px', lg: '16px', xl: '16px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',
@@ -291,7 +291,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'var(--font-plus-jakarta-sans)',
       fontWeight: '800',
-      fontSize: { base: '14px', sm: '16px', md: '14px', lg: '14px', xl: '14px' },
+      fontSize: { base: '14px', sm: '16px', md: '16px', lg: '16px', xl: '16px' },
       lineHeight: '24px',
       letterSpacing: '0px',
       textDecoration: 'none',

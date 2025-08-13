@@ -24,7 +24,7 @@ export const Skills = () => {
         <Container maxW="container.xl" px={8}>
           <MotionBox initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Box>
-              <Heading as="h2" p="4" textStyle="sectionHeading" textAlign="center" bgGradient="to-r" gradientFrom="blue.vivid" gradientTo="white" bgClip="text">
+              <Heading as="h2" p="4" textStyle="sectionHeading" textAlign="center" bgGradient="headings" bgClip="text">
                 Tech Stack & Skills
               </Heading>
 
@@ -32,18 +32,18 @@ export const Skills = () => {
                 Languages, tools, and frameworks I use to build fast and scalable web applications.
               </Heading>
 
-              <Box p={{ base: 3, sm: 6, md: 6, lg: 6, xl: 6 }} bg="blackAlpha.500" borderRadius="xl" border="1px solid" borderColor="gray.800" backdropFilter="blur(4px)">
-                <Box ref={containerRef} display="flex" flexWrap="wrap" gap={{ base: 1, sm: 4, md: 4, lg: 4, xl: 4 }} justifyContent="center" maxH={showAll ? { base: "1000px", sm: "1000px", md: "1000px", lg: "1200px", xl: "1200px" } : { base: "6.5rem", sm: "6.5rem", md: "6.5rem", lg: "6.5rem", xl: "7rem" }} overflow="hidden" transition="max-height 0.4s ease-in-out">
+              <Box p={{ base: 3, sm: 3, md: 3, lg: 3, xl: 6 }} bg="blackAlpha.500" borderRadius="xl" border="1px solid" borderColor="gray.800" backdropFilter="blur(4px)">
+                <Box ref={containerRef} display="flex" flexWrap="wrap" gap={{ base: 1, sm: 2, md: 2 , lg: 2, xl: 4 }} justifyContent="center" maxH={showAll ? { base: "1000px", sm: "1000px", md: "1000px", lg: "1200px", xl: "1200px" } : { base: "6.5rem", sm: "6.5rem", md: "6.5rem", lg: "6.5rem", xl: "7rem" }} overflow="hidden" transition="max-height 0.4s ease-in-out">
                   {skillsData.map((skill) => (
-                    <Link key={skill.name} href={skill.url} textStyle="skillBadge" display="flex" alignItems="center" mt={{ base: 2, sm: 2, md: 2, lg: 2, xl: 2 }} px={{ base: 2, sm: 4, md: 4, lg: 4, xl: 4 }} py={{ base: 2, sm: 2, md: 2, lg: 2, xl: 2 }} bg="whiteAlpha.100" borderRadius="full" border="1px solid" borderColor="gray.700" color="white" _hover={{borderColor: "blue.vivid" }} textDecoration="none" target="blank" rel="noopener noreferrer">
-                      {skill.icon && ( <Box as={skill.icon} boxSize={{ base: 4, sm: 5, md: 5, lg: 5, xl: 6 }} mr={{ base: 1, sm: 5, md: 5, lg: 5, xl: 2 }} />)}
+                    <Link key={skill.name} href={skill.url} textStyle="skillBadge" display="flex" alignItems="center" mt={{ base: 2, sm: 2, md: 2, lg: 2, xl: 2 }} px={{ base: 2, sm: 2, md: 2, lg: 2, xl: 4 }} py={{ base: 2, sm: 2, md: 2, lg: 2, xl: 2 }} bg="whiteAlpha.100" borderRadius="full" border="1px solid" borderColor="gray.700" color="white" _hover={{borderColor: "blue.hovers" }} textDecoration="none" target="blank" rel="noopener noreferrer">
+                      {skill.icon && ( <Box as={skill.icon} boxSize={{ base: 4, sm: 5, md: 5, lg: 6, xl: 6 }} mr={{ base: 1, sm: 1, md: 1, lg: 1, xl: 2 }} />)}
                       {skill.name}
                     </Link>
                   ))}
                 </Box>
 
                 {isOverflowing && (
-                  <Box textAlign="center" mt={{ base: 1, md: 4 }}>
+                  <Box textAlign="center" mt={{ base: 1, sm: 2, md: 2, lg: 2, xl: 4 }}>
                     <Text as="button" textStyle="showMore" onClick={() => setShowAll(!showAll)} color="white" cursor="pointer">
                       {showAll ? "Show Less" : "Show More..."}
                     </Text>
