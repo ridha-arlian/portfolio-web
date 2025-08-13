@@ -20,11 +20,13 @@ export const AboutMe = () => {
               <GridItem>
                 <VStack gap={6} align="center" textAlign="center" px={{ base: 4, md: 8 }}>
                   <Text textStyle="aboutContent" color="white" maxW="3xl">
-                    Graduated from Syiah Kuala University in 2025 with a GPA of 3.51, majoring in Informatics and specializing in Software Engineering. Skilled in UI/UX Design, Full-Stack Development, Web Development, as well as Application Testing.
+                    {/* Graduated from Syiah Kuala University in 2025 with a GPA of 3.51, majoring in Informatics and specializing in Software Engineering. Skilled in UI/UX Design, Full-Stack Development, Web Development, as well as Application Testing. */}
+                    Informatics graduate from Syiah Kuala University specializing in Software Engineering, with strong expertise in designing, developing, and deploying scalable web applications. Focused on delivering efficient, maintainable, and user-centered solutions through modern development practices.
                   </Text>
 
                   <Text textStyle="aboutContent" color="white" maxW="3xl">
-                    Driven by curiosity and a passion for continuous learning. Motivated to grow in dynamic environments that offer challenges and opportunities for development. Comfortable working both independently and in teams, even under tight deadlines and shifting priorities.
+                    {/* Driven by curiosity and a passion for continuous learning. Motivated to grow in dynamic environments that offer challenges and opportunities for development. Comfortable working both independently and in teams, even under tight deadlines and shifting priorities. */}
+                    Proficient in frontend development with React and Next.js, and backend development using PHP (Laravel), Python (Django), and TypeScript/JavaScript (Node.js). Experienced in RESTful API design, database management, and implementing real-time communication with WebRTC and mediasoup. Capable of working effectively both independently and in collaborative team environments.
                   </Text>
                 </VStack>
               </GridItem>

@@ -17,9 +17,8 @@ export const Footer = () => {
         <Container maxW="container.xl" px={4}>
           <HStack justify="center" gap={6} mb={8} flexWrap="wrap">
             {footersData.map((item) => (
-              <Link key={item.label} href={item.href} aria-label={item.label} display="flex" textStyle="footerButton" alignItems="center" gap={2} px={4} py={2} borderRadius="full" bg="blackAlpha.300" color="white" transition="all 0.3s" target="blank" rel="noopener noreferrer">
-                {item.icon && <Box as={item.icon} boxSize={{ base: 6, md: 6 }} mr={2} />}
-                {item.label}
+              <Link key={item.label} href={item.href} aria-label={item.label} display="flex" border="1px solid" borderColor="gray.700" alignItems="center" justifyContent="center" boxSize={10} borderRadius="full" bg="gray.900" _hover={{ borderColor: "blue.vivid" }} target="_blank" rel="noopener noreferrer">
+                {item.icon && <Box as={item.icon} boxSize={6} />}
               </Link>
             ))}
           </HStack>

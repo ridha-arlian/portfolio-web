@@ -1,53 +1,44 @@
-export type TimelineItemType = {
-  id: number
-  role: string
-  company: string
-  period: string
-  location: string
-  type: string
-  logo?: string
-  skills: string[]
-}
+import { Telkomicons, Expeicons, Uskicons } from '@/components/icons/iconsDarkMode'
 
-export const timelineData: TimelineItemType[] = [
+export const timelineData = [
   {
     id: 1,
-    company: "Company A",
-    role: "Software Engineer",
-    period: "2020 - 2022",
-    location: "New York, NY",
-    type: "Full-time",
-    logo: "/placeholder.svg?height=48&width=48",
-    skills: ["JavaScript", "React", "Node.js"],
+    company: 'Pondok Ulung Village Government',
+    role: 'Web Developer',
+    period: 'Jun 2022 - Jul 2022',
+    location: 'Bener Meriah, Indonesia',
+    type: 'Community Service Program',
+    logo: Expeicons,
+    skills: ['React', 'Next.js', 'Chakra UI'],
   },
   {
     id: 2,
-    company: "Company B",
-    role: "Frontend Developer",
-    period: "2022 - Present",
-    location: "San Francisco, CA",
-    type: "Full-time",
-    logo: "/placeholder.svg?height=48&width=48",
-    skills: ["React", "Next.js", "Chakra UI"],
+    company: 'Telkom Indonesia',
+    role: 'UI/UX Developer Intern',
+    period: 'Oct 2022 - Nov 2022',
+    location: 'Banda Aceh, Indonesia',
+    type: 'Internship',
+    logo: Telkomicons,
+    skills: ['UI/UX Design', 'Figma'],
   },
   {
     id: 3,
-    company: "Company C",
-    role: "Frontend Developer",
-    period: "2022 - Present",
-    location: "San Francisco, CA",
-    type: "Full-time",
-    logo: "/placeholder.svg?height=48&width=48",
+    company: 'Hannasa Jaya',
+    role: 'Software Engineer',
+    period: 'Jan 2024 - Sep 2024',
+    location: 'Lhokseumawe, Indonesia',
+    type: 'Freelance',
+    logo: Expeicons,
     skills: ["React", "Next.js", "Chakra UI"],
   },
   {
     id: 4,
-    company: "Company D",
-    role: "Frontend Developer",
-    period: "2022 - Present",
-    location: "San Francisco, CA",
-    type: "Full-time",
-    logo: "/placeholder.svg?height=48&width=48",
-    skills: ["React", "Next.js", "Chakra UI"],
-  },
+    company: 'Syiah Kuala University',
+    role: 'Full Stack Developer',
+    period: 'Des 2024 - Mei 2025',
+    location: 'Banda Aceh, Indonesia',
+    type: 'Bachelor\'s Final Project',
+    logo: Uskicons,
+    skills: ['WebRTC', 'Mediasoup', 'React', 'Node.js'],
+  }
 ]

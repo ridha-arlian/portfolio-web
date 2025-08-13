@@ -1,4 +1,4 @@
-import { Githubicons } from '@/components/icons/iconsDarkMode'
+import { Githubicons, Xicons, Discordicons, Linkedinicons } from '@/components/icons/iconsDarkMode'
 
 export const footersData = [
   {
@@ -8,20 +8,20 @@ export const footersData = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/aakash4dev',
-    icon: Githubicons
+    href: 'https://linkedin.com/in/ridha-arlian/',
+    icon: Linkedinicons
   },
-  { label: 'Twitter',
-    href: 'https://twitter.com/aakash4dev',
-    icon: Githubicons
+  { label: 'X',
+    href: 'https://x.com/arlian__',
+    icon: Xicons
   },
   { label: 'Discord',
-    href: 'https://discord.com/users/aakash4dev',
-    icon: Githubicons
+    href: 'https://discord.com/users/flyanss',
+    icon: Discordicons
   },
-  {
-    label: 'Medium',
-    href: 'https://medium.com/@aakash4dev',
-    icon: Githubicons
-  },
+  // {
+  //   label: 'Medium',
+  //   href: 'https://medium.com/@aakash4dev',
+  //   icon: Githubicons
+  // },
 ];

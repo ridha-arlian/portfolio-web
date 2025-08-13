@@ -9,7 +9,7 @@ const MotionBox = motion.create(Box)
 function ProjectCard({ title, description, tags, url }: { title: string, description: string, tags: string[], url?: string }) {
   return (
     <>
-      <Box p={{ base: 4, sm: 6, md: 6, lg: 6, xl: 6 }} borderRadius="lg" bg="gray.900" border="1px solid" borderColor="gray.800" w="full" maxW="lg" mx="auto">
+      <Box p={{ base: 4, sm: 6, md: 6, lg: 6, xl: 6 }} borderRadius="lg" bg="blackAlpha.500" border="1px solid" borderColor="gray.800" w="full" maxW="lg" mx="auto">
         {url && (
           <Link href={url} display="block" overflow="hidden" borderRadius="md" border="1px solid" borderColor="gray.700" mb={4}>
             <Image src={`https://image.thum.io/get/width/800/crop/768/${url}`} alt={title} w="full" h="180px" objectFit="cover"/>
@@ -26,7 +26,7 @@ function ProjectCard({ title, description, tags, url }: { title: string, descrip
         
         <Flex flexWrap="wrap" justify="center" gap={1}>
           {tags.map((tag, i) => (
-            <Badge key={i} px={{ base: 2, sm: 3, md: 3, lg: 3, xl: 3 }} py={1} textStyle="badgeProjects" borderRadius="full" bg="blackAlpha.300" color="white" _hover={{ color:"blue.vivid", borderColor: "blue.vivid" }} border="1px solid" borderColor="brand.500/20">
+            <Badge key={i} px={{ base: 2, sm: 3, md: 3, lg: 3, xl: 3 }} py={1} textStyle="badgeProjects" borderRadius="full" bg="gray.900" color="white" _hover={{ color:"blue.vivid", borderColor: "blue.vivid" }} border="1px solid" borderColor="gray.700">
               {tag}
             </Badge>
           ))}
