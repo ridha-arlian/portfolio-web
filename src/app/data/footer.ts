@@ -1,27 +1,27 @@
+import { GithubLighticons, XLighticons } from '@/components/icons/iconsLightMode'
 import { Githubicons, Xicons, Discordicons, Linkedinicons } from '@/components/icons/iconsDarkMode'
 
 export const footersData = [
   {
     label: 'GitHub',
     href: 'https://github.com/ridha-arlian',
-    icon: Githubicons
+    iconLight: GithubLighticons,
+    iconDark: Githubicons,
   },
   {
     label: 'LinkedIn',
     href: 'https://linkedin.com/in/ridha-arlian/',
-    icon: Linkedinicons
+    iconLight: Linkedinicons,
+    iconDark: Linkedinicons
   },
   { label: 'X',
     href: 'https://x.com/arlian__',
-    icon: Xicons
+    iconLight: XLighticons,
+    iconDark: Xicons
   },
   { label: 'Discord',
     href: 'https://discord.com/users/flyanss',
-    icon: Discordicons
+    iconLight: Discordicons,
+    iconDark: Discordicons
   },
-  // {
-  //   label: 'Medium',
-  //   href: 'https://medium.com/@aakash4dev',
-  //   icon: Githubicons
-  // },
-];
+]

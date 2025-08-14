@@ -1,8 +1,8 @@
 'use client'
 
-import { Box, Container, Heading, Flex, Text, Grid } from '@chakra-ui/react'
-import { FileText, Blocks, Cpu, Braces, MessageSquare } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { FileText, Blocks, Cpu, Braces, MessageSquare } from 'lucide-react'
+import { Box, Container, Heading, Flex, Text, Grid } from '@chakra-ui/react'
 
 const MotionBox = motion.create(Box)
 const MotionGrid = motion.create(Grid)

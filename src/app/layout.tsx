@@ -14,15 +14,15 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Ridha Arlian",
-  description: "Portfolio of Ridha Arlian.",
-  generator: "Next.js",
+  title: 'Ridha Arlian',
+  description: 'Portfolio of Ridha Arlian.',
+  generator: 'Next.js',
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <>
-      <html lang="en" className={`${spaceGroteskLogo.variable} ${plusJakartaSans.variable}`} suppressHydrationWarning>
+      <html lang='en' className={`${spaceGroteskLogo.variable} ${plusJakartaSans.variable}`} suppressHydrationWarning>
         <body>
           <Provider>
             {children}

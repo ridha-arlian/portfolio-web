@@ -2,20 +2,19 @@
 
 import type React from 'react'
 import { Box } from '@chakra-ui/react'
-import { Navbar } from '@/app/components/navbar'
-import { AboutMe } from '@/app/components/about'
-// import { Services } from '@/app/components/services'
-import { Projects } from '@/app/components/projects'
-import { Contacts } from '@/app/components/contacts'
 import { Hero } from '@/app/components/hero'
 import { Footer } from '@/app/components/footer'
+import { Navbar } from '@/app/components/navbar'
+import { AboutMe } from '@/app/components/about'
 import { Skills } from '@/app/components/skills'
+import { Projects } from '@/app/components/projects'
+import { Contacts } from '@/app/components/contacts'
 import { Timelines } from '@/app/components/timelines'
 
 export default function Home() {
   return (
     <>
-      <Box minH="100vh" bg="background" overflow="hidden">
+      <Box minH='100vh' bg='background' overflow='hidden'>
         
         {/* Navbar */}
         <Navbar/>
