@@ -145,7 +145,6 @@ export const textStyles = defineTextStyles({
     },
   },
 
-
   // Timeline
   roleTimeline: {
     description: 'For text role card in Timeline Section',

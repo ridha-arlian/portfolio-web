@@ -14,20 +14,20 @@ export const Hero = () => {
         <AnimatedBoxes />
         <Container position='relative' zIndex={10} px={8} textAlign='center'>
           <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <Heading as='h1' textStyle='heroHeading' p={4} bgGradient='headings' bgClip='text'>
+            <Heading as='h1' textStyle='heroHeading' p={4} bgGradient={{ _dark: 'headings' }} color={{ base: 'greens.normal' }} bgClip={{ _dark: 'text' }}>
                RIDHA ARLIAN — Web & Backend Developer.
             </Heading>
-            <Heading as='h2' textStyle='heroSubHeading' mb={8} color='white'>
+            <Heading as='h2' textStyle='heroSubHeading' mb={8} color={{ base: 'greens.texts', _dark: 'white' }}>
               I design, code, and optimize full-stack web solutions.
             </Heading>
             <HStack gap={{ base: 1, sm: 4, md: 4, lg: 4, xl: 4 }} justify='center' flexWrap='wrap'>
               <ScrollLink to='work' smooth={true} duration={500}>
-                <Button textStyle='buttonHero1' bg='blue.vivid' _hover={{ bg: 'blue.hovers' }}>
+                <Button textStyle='buttonHero1' bg={{ base: 'earth.light', _dark: 'blue.vivid' }} _hover={{ bg: { base: 'earth.normal', _dark: 'blue.hovers' } }}>
                   View Projects
                 </Button>
               </ScrollLink>
               <ScrollLink to='contact' smooth={true} duration={500}>
-                <Button textStyle='buttonHero2' variant='outline' bg='transparent' borderColor='white' color='white' _hover={{ borderColor: 'blue.hovers', color: 'blue.hovers' }} transition='all 0.3s'>
+                <Button textStyle='buttonHero2' variant='outline' bg='transparent' borderColor={{ base: 'earth.light', _dark: 'white' }} color={{ base: 'earth.light', _dark: 'white' }} _hover={{ borderColor: { base: 'earth.normal', _dark: 'blue.hovers' }, color: { base: 'earth.normal', _dark: 'blue.hovers' } }} transition='all 0.3s'>
                   Contact Me
                 </Button>
               </ScrollLink>
