@@ -64,7 +64,7 @@ export const Contacts = () => {
                     </a>
                   </Button>
                   <Button rel='noopener noreferrer' textStyle='contactButton' bg='transparent' borderColor={{ base: 'earth.light', _dark: 'white' }} color={{ base: 'earth.light', _dark: 'white' }} _hover={{ borderColor: { base: 'earth.normal', _dark: 'blue.hovers' }, color: { base: 'earth.normal', _dark: 'blue.hovers' } }} transition='all 0.3s' asChild>
-                    <a href='https://calendar.app.google/EMk95a7fiXYqZcxk6' target='blank' rel='noopener noreferrer'>
+                    <a href='#' target='blank' rel='noopener noreferrer'>
                       {/* <Calicons boxSize="6"/> */}
                       View CV
                     </a>
