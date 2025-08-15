@@ -3,14 +3,41 @@
 import { motion } from 'framer-motion'
 // import { Calicons } from '@/components/icons/iconsDarkMode'
 import { Box, Container, Heading, Text, Button, VStack, HStack, Field, Input, Textarea } from '@chakra-ui/react'
+import { useState } from 'react'
 
 const MotionBox = motion.create(Box)
 
 export const Contacts = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    console.log('Form submission prevented')
-  }
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+  
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/send-message", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (res.ok) {
+        alert("Pesan berhasil dikirim!");
+        setName(""); setEmail(""); setMessage("");
+      } else {
+        alert("Gagal mengirim pesan");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Terjadi error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   
   return (
     <>
@@ -30,24 +57,24 @@ export const Contacts = () => {
                     <Field.Label textStyle='contactDetail' color={{ base: 'greens.texts', _dark: 'white' }}>
                       Name
                     </Field.Label>
-                    <Input type='text' name='name' bg={{ base: 'whites.badges', _dark: 'gray.800' }} borderColor={{ base: 'earth.normal', _dark: 'gray.800' }} color={{ base: 'greens.normal', _dark: 'white' }} _focus={{ borderColor: { base: 'earth.normal', _dark: 'gray.800' } }}/>
+                    <Input type='text' value={name} name='name' bg={{ base: 'whites.badges', _dark: 'gray.800' }} borderColor={{ base: 'earth.normal', _dark: 'gray.800' }} color={{ base: 'greens.normal', _dark: 'white' }} _focus={{ borderColor: { base: 'earth.normal', _dark: 'gray.800' } }} onChange={(e) => setName(e.target.value)}/>
                   </Field.Root>
                       
                   <Field.Root>
                     <Field.Label textStyle='contactDetail' color={{ base: 'greens.texts', _dark: 'white' }}>
                       Email
                     </Field.Label>
-                    <Input type='email' name='email' bg={{ base: 'whites.badges', _dark: 'gray.800' }} borderColor={{ base: 'earth.normal', _dark: 'gray.800' }} color={{ base: 'greens.normal', _dark: 'white' }} _focus={{ borderColor: { base: 'earth.normal', _dark: 'gray.800' } }}/>
+                    <Input type='email' name='email' value={email} bg={{ base: 'whites.badges', _dark: 'gray.800' }} borderColor={{ base: 'earth.normal', _dark: 'gray.800' }} color={{ base: 'greens.normal', _dark: 'white' }} _focus={{ borderColor: { base: 'earth.normal', _dark: 'gray.800' } }} onChange={(e) => setEmail(e.target.value)}/>
                   </Field.Root>
       
                   <Field.Root>
                     <Field.Label textStyle='contactDetail' color={{ base: 'greens.texts', _dark: 'white' }}>
                       Message
                     </Field.Label>
-                    <Textarea name='message' rows={4} bg={{ base: 'whites.badges', _dark: 'gray.800' }} borderColor={{ base: 'earth.normal', _dark: 'gray.800' }} color={{ base: 'greens.normal', _dark: 'white' }} _focus={{ borderColor: { base: 'earth.normal', _dark: 'gray.800' } }}/>
+                    <Textarea name='message' value={message} rows={4} bg={{ base: 'whites.badges', _dark: 'gray.800' }} borderColor={{ base: 'earth.normal', _dark: 'gray.800' }} color={{ base: 'greens.normal', _dark: 'white' }} _focus={{ borderColor: { base: 'earth.normal', _dark: 'gray.800' } }} onChange={(e) => setMessage(e.target.value)}/>
                   </Field.Root>
                   
-                  <Button type='submit' textStyle='contactButton' width='100%' _hover={{ bg: { base: 'earth.normal', _dark: 'blue.hovers' } }}>
+                  <Button type='submit' textStyle='contactButton' width='100%' loading={loading} _hover={{ bg: { base: 'earth.normal', _dark: 'blue.hovers' } }}>
                     Send Message
                   </Button>
                 </VStack>
