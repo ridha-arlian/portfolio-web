@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import { Box } from '@chakra-ui/react'
-import React, { useEffect, useState, useCallback } from 'react'
+import { Box } from "@chakra-ui/react"
+import React, { useEffect, useState, useCallback } from "react"
 
 interface BoxType {
   id: number
@@ -11,11 +11,11 @@ interface BoxType {
   delay: number
 }
 
-const AnimatedBox = React.memo(( { x, y, size, delay }: Omit<BoxType, 'id'>) => (
-  <Box position='absolute' bg='gray.300' opacity={0.1} width={ `${size}px` } height={ `${size}px` } left={ `${x}px` } top={`${y}px`} animation={`float 6s ease-in-out infinite`} animationDelay={`${delay}s`} css={{ '@keyframes float': { '0%, 100%' : { transform: 'translateY(0px)' }, '50%' : { transform: 'translateY(-20px)' },},}}/>
+const AnimatedBox = React.memo(( { x, y, size, delay }: Omit<BoxType, "id">) => (
+  <Box position="absolute" bg="gray.300" opacity={0.1} width={ `${size}px` } height={ `${size}px` } left={ `${x}px` } top={`${y}px`} animation={`float 6s ease-in-out infinite`} animationDelay={`${delay}s`} css={{ "@keyframes float": { "0%, 100%" : { transform: "translateY(0px)" }, "50%" : { transform: "translateY(-20px)" },},}}/>
 ))
 
-AnimatedBox.displayName='AnimatedBox'
+AnimatedBox.displayName="AnimatedBox"
 
 const AnimatedBoxes = () => {
   const [boxes, setBoxes] = useState<BoxType[]>([])
@@ -39,12 +39,12 @@ const AnimatedBoxes = () => {
 
   useEffect(() => {
     generateBoxes()
-    window.addEventListener('resize', generateBoxes)
-    return () => window.removeEventListener('resize', generateBoxes)
+    window.addEventListener("resize", generateBoxes)
+    return () => window.removeEventListener("resize", generateBoxes)
   }, [generateBoxes])
 
   return (
-    <Box position='absolute' inset='0' overflow='hidden' pointerEvents='none' zIndex={0}>
+    <Box position="absolute" inset="0" overflow="hidden" pointerEvents="none" zIndex={0}>
       {boxes.map((box) => (
         <AnimatedBox key={box.id} {...box} />
       ))}

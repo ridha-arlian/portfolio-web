@@ -23,156 +23,156 @@ import {
   Cssicons,
   Posticons,
   Ngrokicons
-} from '@/components/icons/iconsDarkMode'
+} from "@/components/icons/iconsDarkMode"
 
 import {
   GithubLighticons,
   Mediasouplighticons
-} from '@/components/icons/iconsLightMode'
+} from "@/components/icons/iconsLightMode"
 
 export const skillsData = [
   {
-    name: 'JavaScript',
+    name: "JavaScript",
     iconLight: Javascripticons,
     iconDark: Javascripticons,
-    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/'
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/"
   },
   { 
-    name: 'Chakra UI',
+    name: "Chakra UI",
     iconLight: Chakrauiicons,
     iconDark: Chakrauiicons,
-    url: 'https://chakra-ui.com/'
+    url: "https://chakra-ui.com/"
   },
   { 
-    name: 'React',
+    name: "React",
     iconLight: Reactsicons,
     iconDark: Reactsicons,
-    url: 'https://react.dev/'
+    url: "https://react.dev/"
   },
   { 
-    name: 'Django',
+    name: "Django",
     iconLight: Djangoicons,
     iconDark: Djangoicons,
-    url: 'https://djangoproject.com/'
+    url: "https://djangoproject.com/"
   },
   { 
-    name: 'Supabase',
+    name: "Supabase",
     iconLight: Supabaseicons,
     iconDark: Supabaseicons,
-    url: 'https://supabase.com/'
+    url: "https://supabase.com/"
   },
   { 
-    name: 'Python',
+    name: "Python",
     iconLight: Pythonicons,
     iconDark: Pythonicons,
-    url: 'https://python.org/'
+    url: "https://python.org/"
   },
   { 
-    name: 'Typescript',
+    name: "Typescript",
     iconLight: Typeicons,
     iconDark: Typeicons,
-    url: 'https://typescriptlang.org/'
+    url: "https://typescriptlang.org/"
   },
   { 
-    name: 'Figma',
+    name: "Figma",
     iconLight: Figmaicons,
     iconDark: Figmaicons,
-    url: 'https://figma.com/'
+    url: "https://figma.com/"
   },
   { 
-    name: 'Postgresql',
+    name: "Postgresql",
     iconLight: Postgreicons,
     iconDark: Postgreicons,
-    url: 'https://postgresql.org/'
+    url: "https://postgresql.org/"
   },
   { 
-    name: 'Git',
+    name: "Git",
     iconLight: Giticons,
     iconDark: Giticons,
-    url: 'https://git-scm.com/'
+    url: "https://git-scm.com/"
   },
   { 
-    name: 'Github',
+    name: "Github",
     iconLight: GithubLighticons,
     iconDark: Githubicons,
-    url: 'https://github.com/'
+    url: "https://github.com/"
   },
   { 
-    name: 'Docker',
+    name: "Docker",
     iconLight: Dockericons,
     iconDark: Dockericons,
-    url: 'https://docker.com/'
+    url: "https://docker.com/"
   },
   { 
-    name: 'Laravel',
+    name: "Laravel",
     iconLight: Laravelicons,
     iconDark: Laravelicons,
-    url: 'https://laravel.com/'
+    url: "https://laravel.com/"
   },
   { 
-    name: 'Bootstrap',
+    name: "Bootstrap",
     iconLight: Bootstrapicons,
     iconDark: Bootstrapicons,
-    url: 'https://getbootstrap.com/'
+    url: "https://getbootstrap.com/"
   },
   { 
-    name: 'WebRTC',
+    name: "WebRTC",
     iconLight: Webrtcicons,
     iconDark: Webrtcicons,
-    url: 'https://webrtc.org/'
+    url: "https://webrtc.org/"
   },
   { 
-    name: 'Mediasoup',
+    name: "Mediasoup",
     iconLight: Mediasouplighticons,
     iconDark: Mediasoupicons,
-    url: 'https://mediasoup.org/'
+    url: "https://mediasoup.org/"
   },
   { 
-    name: 'Next.js',
+    name: "Next.js",
     iconLight: Nexticons,
     iconDark: Nexticons,
-    url: 'https://nextjs.org/'
+    url: "https://nextjs.org/"
   },
   { 
-    name: 'CodeIgniter',
+    name: "CodeIgniter",
     iconLight: Codeicons,
     iconDark: Codeicons,
-    url: 'https://codeigniter.com/'
+    url: "https://codeigniter.com/"
   },
   { 
-    name: 'Firebase',
+    name: "Firebase",
     iconLight: Fireicons,
     iconDark: Fireicons,
-    url: 'https://firebase.google.com/'
+    url: "https://firebase.google.com/"
   },
   { 
-    name: 'HTML',
+    name: "HTML",
     iconLight: Htmlicons,
     iconDark: Htmlicons,
-    url: 'https://html.spec.whatwg.org/'
+    url: "https://html.spec.whatwg.org/"
   },
   { 
-    name: 'Tailwind CSS',
+    name: "Tailwind CSS",
     iconLight: Tailicons,
     iconDark: Tailicons,
-    url: 'https://tailwindcss.com/'
+    url: "https://tailwindcss.com/"
   },
   { 
-    name: 'CSS',
+    name: "CSS",
     iconLight: Cssicons,
     iconDark: Cssicons,
-    url: 'https://w3.org/Style/CSS/'
+    url: "https://w3.org/Style/CSS/"
   },
   { 
-    name: 'Postman',
+    name: "Postman",
     iconLight: Posticons,
     iconDark: Posticons,
-    url: 'https://postman.com/'
+    url: "https://postman.com/"
   },
   { 
-    name: 'Ngrok',
+    name: "Ngrok",
     iconLight: Ngrokicons,
     iconDark: Ngrokicons,
-    url: 'https://ngrok.com/'
+    url: "https://ngrok.com/"
   },
 ]

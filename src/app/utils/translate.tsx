@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import { FaGlobe } from 'react-icons/fa'
-import { Box, Button } from '@chakra-ui/react'
+import { FaGlobe } from "react-icons/fa"
+import { Box, Button } from "@chakra-ui/react"
 
 export const Translate = () => {
 
