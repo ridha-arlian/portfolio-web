@@ -70,7 +70,7 @@ export const Projects = () => {
                 <ProjectCard { ...projectsData[current] } />
               </Box>
 
-              <Button aria-label="Next" size="lg" onClick={ next } variant="ghost" color={{ base: "black", _dark: "white" }} bg="inherit" _hover={{ borderColor: { base: "earth.normal", _dark: "blue.hovers" } }} position="absolute" left={0} top="50%" transform="translateY(-50%)" display={{ base: "none", md: "flex" }} zIndex={1}>
+              <Button aria-label="Next" size="lg" onClick={ next } variant="ghost" color={{ base: "black", _dark: "white" }} bg="inherit" _hover={{ borderColor: { base: "earth.normal", _dark: "blue.hovers" } }} position="absolute" right={0} top="50%" transform="translateY(-50%)" display={{ base: "none", md: "flex" }} zIndex={1}>
                 <ArrowBigRightIcon />
               </Button>
 
