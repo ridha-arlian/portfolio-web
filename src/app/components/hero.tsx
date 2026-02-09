@@ -15,10 +15,10 @@ export const Hero = () => {
         <Container position="relative" zIndex={10} px={8} textAlign="center">
           <MotionBox initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Heading as="h1" textStyle="heroHeading" p={4} bgGradient={{ _dark: "headings" }} color={{ base: "greens.normal" }} bgClip={{ _dark: "text" }}>
-               RIDHA ARLIAN — Web & Backend Developer.
+               RIDHA ARLIAN — Software Engineer.
             </Heading>
             <Heading as="h2" textStyle="heroSubHeading" mb={8} color={{ base: "greens.texts", _dark: "white" }}>
-              I design, code, and optimize full-stack web solutions.
+              I design, code, and optimize.
             </Heading>
             <HStack gap={{ base: 1, sm: 4, md: 4, lg: 4, xl: 4 }} justify="center" flexWrap="wrap">
               <ScrollLink to="work" smooth={true} duration={500}>

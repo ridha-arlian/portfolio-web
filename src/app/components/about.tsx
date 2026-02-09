@@ -12,7 +12,7 @@ export const AboutMe = () => {
         <Container maxW="container.xl" px={8}>
           <MotionBox initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
             <Heading as="h2" textStyle="sectionHeading" p={4} mb={8} textAlign="center" bgGradient={{ _dark: "headings" }} color={{ base: "greens.normal" }} bgClip={{ _dark: "text" }}>
-              Hi, I&apos;m Ridha — A Web Developer and Backend Engineer.
+              Hi, I&apos;m Ridha — A Software Engineer.
             </Heading>
 
             <Grid templateColumns={{ base: "1fr", md: "1fr" }} gap={8} mb={16} alignItems="center" justifyContent="center">
