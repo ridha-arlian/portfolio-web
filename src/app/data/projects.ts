@@ -16,5 +16,11 @@ export const projectsData = [
     description: "A System Information for Clinic Management built with Laravel and Filament 4.",
     tags: ["Laravel", "Filament 4", "PHP", "PostgreSQL"],
     url: "https://medicin.ridhaarlian.my.id/",
+  },
+  {
+    "title": "Sakoe",
+    "description": "A tip jar website built with Nuxt, Shadcn UI, Tailwind CSS, and Midtrans.",
+    "tags": ["Nuxt", "Shadcn-UI", "Tailwind CSS", "Midtrans", "TypeScript"],
+    "url": "https://sakoe.ridhaarlian.my.id/"
   }
 ]

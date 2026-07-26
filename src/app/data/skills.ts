@@ -22,12 +22,12 @@ import {
   Tailicons,
   Cssicons,
   Posticons,
-  Ngrokicons
+  Ngrokicons,
 } from "@/components/icons/iconsDarkMode"
 
 import {
   GithubLighticons,
-  Mediasouplighticons
+  Mediasouplighticons,
 } from "@/components/icons/iconsLightMode"
 
 export const skillsData = [
@@ -38,7 +38,7 @@ export const skillsData = [
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/"
   },
   { 
-    name: "Chakra UI",
+    name: "Chakra-UI",
     iconLight: Chakrauiicons,
     iconDark: Chakrauiicons,
     url: "https://chakra-ui.com/"
@@ -175,4 +175,22 @@ export const skillsData = [
     iconDark: Ngrokicons,
     url: "https://ngrok.com/"
   },
+  // { 
+  //   name: "Shadcn-UI",
+  //   iconLight: Shadicons,
+  //   iconDark: Shadicons,
+  //   url: "https://ui.shadcn.com/"
+  // },
+  // { 
+  //   name: "Nuxt",
+  //   iconLight: Nuxticons,
+  //   iconDark: Nuxticons,
+  //   url: "https://nuxt.com/"
+  // },
+  // { 
+  //   name: "Midtrans",
+  //   iconLight: Midtransicons,
+  //   iconDark: Midtransicons,
+  //   url: "https://midtrans.com/"
+  // },
 ]
