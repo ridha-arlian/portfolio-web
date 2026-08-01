@@ -6,7 +6,7 @@ export const projectsData = [
     url: "https://catardot.ridhaarlian.my.id/",
   },
   {
-    title: "Thesis: Online Exam Proctoring Feature with WebRTC",
+    title: "Final Project: Online Exam Proctoring Feature with WebRTC",
     description: "Developed a proctoring feature for CBT using WebRTC and mediasoup, with three integrated applications for participants, proctors, and admins.",
     tags: ["WebRTC", "Mediasoup", "React.js", "Node.js", "Django"],
     url: "#",
@@ -22,5 +22,11 @@ export const projectsData = [
     "description": "A tip jar website built with Nuxt, Shadcn UI, Tailwind CSS, and Midtrans.",
     "tags": ["Nuxt", "Shadcn-UI", "Tailwind CSS", "Midtrans", "TypeScript"],
     "url": "https://sakoe.ridhaarlian.my.id/"
+  },
+  {
+    "title": "Kongsi",
+    "description": "A split bill web application built with Nuxt, Shadcn UI, Tailwind CSS, and TypeScript.",
+    "tags": ["Nuxt", "Shadcn-UI", "Tailwind CSS", "TypeScript"],
+    "url": "https://kongsi.ridhaarlian.my.id/"
   }
 ]
