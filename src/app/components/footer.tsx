@@ -33,8 +33,8 @@ export const Footer = () => {
             <Text color={{ base: "greens.texts", _dark: "gray.500" }} textStyle="footerText" textAlign="center">
               {year ? `© ${year} Ridha Arlian. All rights reserved.` : null}
             </Text>
-            <Link href="mailto:ridhaarlian@proton.me" color={{ base: "greens.normal", _dark: "white" }} textStyle="footerText" _hover={{ color: { base: "earth.normal", _dark: "blue.hovers" } }} target="blank" rel="noopener noreferrer">
-              ridhaarlian@proton.me
+            <Link href="mailto:ridha.arlian19@gmail.com" color={{ base: "greens.normal", _dark: "white" }} textStyle="footerText" _hover={{ color: { base: "earth.normal", _dark: "blue.hovers" } }} target="blank" rel="noopener noreferrer">
+              ridha.arlian19@gmail.com
             </Link>
           </VStack>
         </Container>
